@@ -4,10 +4,10 @@ from typing import TYPE_CHECKING, Union, Optional
 if TYPE_CHECKING:
     import logging
 
-from logging_module.custom_logging import get_logger
-from board_representation.constants import COLORS_INV, COLORS, FILES, PIECES_INV
+from logging_module import get_logger
+from board_representation import COLORS_INV, COLORS, FILES, PIECES_INV
 if TYPE_CHECKING:
-    from board_representation.board import Board
+    from board_representation import Board
 
 
 logger: logging.Logger = get_logger('utils.fen')

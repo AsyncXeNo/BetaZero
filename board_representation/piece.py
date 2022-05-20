@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     import logging
 
-from logging_module.custom_logging import get_logger
+from logging_module import get_logger
 
 
 class Piece(object):

@@ -4,9 +4,8 @@ from typing import TYPE_CHECKING, Optional
 if TYPE_CHECKING:
     import logging
 
-from logging_module.custom_logging import get_logger
-from board_representation.piece import Piece
-from board_representation.constants import FILES
+from logging_module import get_logger
+from board_representation import Piece, FILES
 
 
 class Square(object):

@@ -4,14 +4,13 @@ from typing import TYPE_CHECKING, Optional, Union
 if TYPE_CHECKING:
     import logging
 
-from logging_module.custom_logging import get_logger
-from board_representation.square import Square
-from board_representation.constants import BASE_FEN, COLORS, FILES_INV, PIECES
-from board_representation.utils.fen import parse_fen, compile_fen
+from logging_module import get_logger
+from board_representation import Square, BASE_FEN, COLORS, FILES_INV, PIECES
+from board_representation.utils import parse_fen, compile_fen
 
 
 class Board(object):
-    """Mailbox representation of a chess"""
+    """Mailbox representation of a chess board"""
 
     def __init__(self: Board, fen: str = BASE_FEN) -> Board:
         self.logger: logging.Logger = get_logger('board')
